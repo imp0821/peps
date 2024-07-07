@@ -1,0 +1,110 @@
+2024-04-19 21:05:05.385 CST [225059] LOG:  starting PostgreSQL 15.0 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 8.4.0-1ubuntu1~16.04.1) 8.4.0, 64-bit
+2024-04-19 21:05:05.385 CST [225059] LOG:  listening on IPv6 address "::1", port 5432
+2024-04-19 21:05:05.385 CST [225059] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-04-19 21:05:05.455 CST [225059] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2024-04-19 21:05:05.525 CST [225062] LOG:  database system was shut down at 2024-04-19 21:04:57 CST
+2024-04-19 21:05:05.558 CST [225059] LOG:  database system is ready to accept connections
+2024-04-19 21:10:05.624 CST [225060] LOG:  checkpoint starting: time
+2024-04-19 21:11:39.088 CST [225060] LOG:  checkpoint complete: wrote 936 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=93.292 s, sync=0.057 s, total=93.464 s; sync files=263, longest=0.056 s, average=0.001 s; distance=4256 kB, estimate=4256 kB
+2024-04-19 21:26:17.042 CST [241346] FATAL:  lock file "postmaster.pid" already exists
+2024-04-19 21:26:17.042 CST [241346] HINT:  Is another postmaster (PID 225059) running in data directory "/home/pyc/data/pg15-data"?
+2024-04-19 21:26:29.406 CST [225059] LOG:  received fast shutdown request
+2024-04-19 21:26:29.449 CST [225059] LOG:  aborting any active transactions
+2024-04-19 21:26:29.449 CST [225059] LOG:  background worker "logical replication launcher" (PID 225065) exited with exit code 1
+2024-04-19 21:26:29.449 CST [225060] LOG:  shutting down
+2024-04-19 21:26:29.487 CST [225060] LOG:  checkpoint starting: shutdown immediate
+2024-04-19 21:26:29.671 CST [225060] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.059 s, total=0.222 s; sync files=1, longest=0.059 s, average=0.059 s; distance=0 kB, estimate=3831 kB
+2024-04-19 21:26:29.672 CST [225059] LOG:  database system is shut down
+2024-04-19 21:26:29.790 CST [241349] LOG:  starting PostgreSQL 15.0 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 8.4.0-1ubuntu1~16.04.1) 8.4.0, 64-bit
+2024-04-19 21:26:29.790 CST [241349] LOG:  listening on IPv6 address "::1", port 5432
+2024-04-19 21:26:29.790 CST [241349] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-04-19 21:26:29.860 CST [241349] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2024-04-19 21:26:29.955 CST [241352] LOG:  database system was shut down at 2024-04-19 21:26:29 CST
+2024-04-19 21:26:29.987 CST [241349] LOG:  database system is ready to accept connections
+2024-04-19 21:26:45.971 CST [241349] LOG:  server process (PID 241359) was terminated by signal 11: Segmentation fault
+2024-04-19 21:26:45.971 CST [241349] DETAIL:  Failed process was running: create inference_function color() model 'test.onnx'
+2024-04-19 21:26:45.971 CST [241349] LOG:  terminating any other active server processes
+2024-04-19 21:26:45.972 CST [241349] LOG:  all server processes terminated; reinitializing
+2024-04-19 21:26:46.018 CST [241366] LOG:  database system was interrupted; last known up at 2024-04-19 21:26:29 CST
+2024-04-19 21:26:46.020 CST [241369] FATAL:  the database system is in recovery mode
+2024-04-19 21:26:46.078 CST [241366] LOG:  database system was not properly shut down; automatic recovery in progress
+2024-04-19 21:26:46.111 CST [241366] LOG:  redo starts at 0/18C0A88
+2024-04-19 21:26:46.111 CST [241366] LOG:  invalid record length at 0/18C0AC0: wanted 24, got 0
+2024-04-19 21:26:46.111 CST [241366] LOG:  redo done at 0/18C0A88 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2024-04-19 21:26:46.160 CST [241367] LOG:  checkpoint starting: end-of-recovery immediate wait
+2024-04-19 21:26:46.328 CST [241367] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.034 s, sync=0.018 s, total=0.201 s; sync files=2, longest=0.010 s, average=0.009 s; distance=0 kB, estimate=0 kB
+2024-04-19 21:26:46.363 CST [241349] LOG:  database system is ready to accept connections
+2024-04-19 21:34:15.198 CST [241349] LOG:  received fast shutdown request
+2024-04-19 21:34:15.277 CST [241349] LOG:  aborting any active transactions
+2024-04-19 21:34:15.278 CST [241349] LOG:  background worker "logical replication launcher" (PID 241372) exited with exit code 1
+2024-04-19 21:34:15.278 CST [241367] LOG:  shutting down
+2024-04-19 21:34:15.303 CST [241367] LOG:  checkpoint starting: shutdown immediate
+2024-04-19 21:34:15.412 CST [241367] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.134 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB
+2024-04-19 21:34:15.412 CST [241349] LOG:  database system is shut down
+2024-04-19 21:34:15.578 CST [248185] LOG:  starting PostgreSQL 15.0 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 8.4.0-1ubuntu1~16.04.1) 8.4.0, 64-bit
+2024-04-19 21:34:15.578 CST [248185] LOG:  listening on IPv6 address "::1", port 5432
+2024-04-19 21:34:15.578 CST [248185] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-04-19 21:34:15.648 CST [248185] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2024-04-19 21:34:15.727 CST [248188] LOG:  database system was shut down at 2024-04-19 21:34:15 CST
+2024-04-19 21:34:15.758 CST [248185] LOG:  database system is ready to accept connections
+2024-04-19 21:34:21.292 CST [248185] LOG:  server process (PID 248193) was terminated by signal 11: Segmentation fault
+2024-04-19 21:34:21.292 CST [248185] DETAIL:  Failed process was running: create inference_function color() model 'test.onnx';
+2024-04-19 21:34:21.292 CST [248185] LOG:  terminating any other active server processes
+2024-04-19 21:34:21.293 CST [248195] FATAL:  the database system is in recovery mode
+2024-04-19 21:34:21.294 CST [248185] LOG:  all server processes terminated; reinitializing
+2024-04-19 21:34:21.348 CST [248196] LOG:  database system was interrupted; last known up at 2024-04-19 21:34:15 CST
+2024-04-19 21:34:21.423 CST [248196] LOG:  database system was not properly shut down; automatic recovery in progress
+2024-04-19 21:34:21.460 CST [248196] LOG:  invalid record length at 0/18C0BE8: wanted 24, got 0
+2024-04-19 21:34:21.460 CST [248196] LOG:  redo is not required
+2024-04-19 21:34:21.509 CST [248197] LOG:  checkpoint starting: end-of-recovery immediate wait
+2024-04-19 21:34:21.695 CST [248197] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.036 s, sync=0.021 s, total=0.219 s; sync files=2, longest=0.012 s, average=0.011 s; distance=0 kB, estimate=0 kB
+2024-04-19 21:34:21.729 CST [248185] LOG:  database system is ready to accept connections
+2024-04-19 21:36:14.920 CST [248185] LOG:  received fast shutdown request
+2024-04-19 21:36:14.960 CST [248185] LOG:  aborting any active transactions
+2024-04-19 21:36:14.961 CST [248185] LOG:  background worker "logical replication launcher" (PID 248201) exited with exit code 1
+2024-04-19 21:36:14.961 CST [248197] LOG:  shutting down
+2024-04-19 21:36:14.995 CST [248197] LOG:  checkpoint starting: shutdown immediate
+2024-04-19 21:36:15.121 CST [248197] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.161 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB
+2024-04-19 21:36:15.122 CST [248185] LOG:  database system is shut down
+2024-04-19 21:36:15.311 CST [254818] LOG:  starting PostgreSQL 15.0 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 8.4.0-1ubuntu1~16.04.1) 8.4.0, 64-bit
+2024-04-19 21:36:15.311 CST [254818] LOG:  listening on IPv6 address "::1", port 5432
+2024-04-19 21:36:15.311 CST [254818] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-04-19 21:36:15.381 CST [254818] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2024-04-19 21:36:15.451 CST [254821] LOG:  database system was shut down at 2024-04-19 21:36:15 CST
+2024-04-19 21:36:15.483 CST [254818] LOG:  database system is ready to accept connections
+2024-04-19 21:36:18.437 CST [254818] LOG:  server process (PID 254826) was terminated by signal 11: Segmentation fault
+2024-04-19 21:36:18.437 CST [254818] DETAIL:  Failed process was running: create inference_function color() model 'test.onnx';
+2024-04-19 21:36:18.437 CST [254818] LOG:  terminating any other active server processes
+2024-04-19 21:36:18.438 CST [254828] FATAL:  the database system is in recovery mode
+2024-04-19 21:36:18.439 CST [254818] LOG:  all server processes terminated; reinitializing
+2024-04-19 21:36:18.478 CST [254829] LOG:  database system was interrupted; last known up at 2024-04-19 21:36:15 CST
+2024-04-19 21:36:18.555 CST [254829] LOG:  database system was not properly shut down; automatic recovery in progress
+2024-04-19 21:36:18.582 CST [254829] LOG:  invalid record length at 0/18C0D10: wanted 24, got 0
+2024-04-19 21:36:18.582 CST [254829] LOG:  redo is not required
+2024-04-19 21:36:18.624 CST [254830] LOG:  checkpoint starting: end-of-recovery immediate wait
+2024-04-19 21:36:18.791 CST [254830] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.034 s, sync=0.018 s, total=0.192 s; sync files=2, longest=0.009 s, average=0.009 s; distance=0 kB, estimate=0 kB
+2024-04-19 21:36:18.818 CST [254818] LOG:  database system is ready to accept connections
+2024-04-19 21:42:27.305 CST [254818] LOG:  received fast shutdown request
+2024-04-19 21:42:27.347 CST [254818] LOG:  aborting any active transactions
+2024-04-19 21:42:27.347 CST [254818] LOG:  background worker "logical replication launcher" (PID 254834) exited with exit code 1
+2024-04-19 21:42:27.347 CST [254830] LOG:  shutting down
+2024-04-19 21:42:27.380 CST [254830] LOG:  checkpoint starting: shutdown immediate
+2024-04-19 21:42:27.489 CST [254830] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.143 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB
+2024-04-19 21:42:27.490 CST [254818] LOG:  database system is shut down
+2024-04-19 21:42:27.579 CST [261572] LOG:  starting PostgreSQL 15.0 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 8.4.0-1ubuntu1~16.04.1) 8.4.0, 64-bit
+2024-04-19 21:42:27.580 CST [261572] LOG:  listening on IPv6 address "::1", port 5432
+2024-04-19 21:42:27.580 CST [261572] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-04-19 21:42:27.649 CST [261572] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2024-04-19 21:42:27.728 CST [261575] LOG:  database system was shut down at 2024-04-19 21:42:27 CST
+2024-04-19 21:42:27.759 CST [261572] LOG:  database system is ready to accept connections
+2024-04-19 21:47:27.826 CST [261573] LOG:  checkpoint starting: time
+2024-04-19 21:47:28.524 CST [261573] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.452 s, sync=0.084 s, total=0.699 s; sync files=6, longest=0.057 s, average=0.014 s; distance=0 kB, estimate=0 kB
+2024-04-22 15:18:59.424 CST [379559] ERROR:  could not load library "/home/pyc/workspace/pg15/lib/postgresql/aqua.so": libpython3.9.so.1.0: cannot open shared object file: No such file or directory
+2024-04-22 15:18:59.424 CST [379559] STATEMENT:  create extension aqua;
+2024-04-22 15:19:36.161 CST [261572] LOG:  received fast shutdown request
+2024-04-22 15:19:36.205 CST [261572] LOG:  aborting any active transactions
+2024-04-22 15:19:36.206 CST [261572] LOG:  background worker "logical replication launcher" (PID 261578) exited with exit code 1
+2024-04-22 15:19:36.206 CST [261573] LOG:  shutting down
+2024-04-22 15:19:36.230 CST [261573] LOG:  checkpoint starting: shutdown immediate
+2024-04-22 15:19:36.457 CST [261573] LOG:  checkpoint complete: wrote 19 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.018 s, sync=0.097 s, total=0.252 s; sync files=17, longest=0.084 s, average=0.006 s; distance=64 kB, estimate=64 kB
+2024-04-22 15:19:36.458 CST [261572] LOG:  database system is shut down

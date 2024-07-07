@@ -1,0 +1,16 @@
+#----------------------------------------------------------------------
+#
+# pg_nudf.dat
+#    Initial contents of the pg_nudf system catalog.
+#
+# Author: Yuchen Peng
+#
+# src/include/catalog/pg_nudf.dat
+#
+#----------------------------------------------------------------------
+
+[
+
+{ oid => '9000', nudfname => 'test', nudfsrc => 'select 1+2 as t;'},
+
+]
