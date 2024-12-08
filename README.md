@@ -1,1 +1,1 @@
-## codes for PVLDB submission: Towards Automatic and Efficient Collaborative Query Processing in Analytical Database
+## codes for ICDE 2025 submission: Towards Automatic and Efficient Prediction Query Processing in Analytical Database
